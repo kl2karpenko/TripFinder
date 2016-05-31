@@ -1,12 +1,14 @@
 header {
   height: 902px;
-  background-image: url("../../img/header-back.jpg");
 }
 
 .header {
   &-top {
     background-color: rgba(0,0,0,0.75);
     height: 80px;
+
+    position: relative;
+    z-index: 2;
   }
   
   &-nav {
@@ -26,6 +28,39 @@ header {
       color: #fff;
       font-size: 20px;
       font-weight: 200;
+    }
+  }
+  
+  &-center {
+    top: -80px;
+    position: relative;
+    z-index: 1;
+
+    img, & {
+      height: 100%;
+      width: 100%;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &-footer {
+    background-color: rgba(75, 149, 230, 0.85);
+    color: #fff;
+    font-size: 20px;
+
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    width: 100%;
+    min-height: 204px;
+    
+    &-text {
+      width: 51%;
+      margin-left: 22px;
     }
   }
 }
