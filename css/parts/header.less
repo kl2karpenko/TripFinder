@@ -10,6 +10,20 @@ header {
     position: relative;
     z-index: 2;
   }
+
+  &-search {
+    background-color: #fff;
+    width: 509px;
+    height: 598px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    right: 0;
+
+    z-index: 3;
+  }
   
   &-nav {
     ul {
@@ -43,6 +57,39 @@ header {
     
     img {
       max-width: 100%;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    > .content-center {
+      position: relative;
+      height: 100%;
+    }
+
+    &-text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+
+      width: 51%;
+      text-align: center;
+
+      h2 {
+        .fontBigNoodle();
+
+        font-size: 62px;
+        text-transform: uppercase;
+      }
+
+      h4 {
+        font-size: 30px;
+        font-family: "Open Sans";
+      }
     }
   }
 
@@ -61,6 +108,10 @@ header {
     &-text {
       width: 51%;
       margin-left: 22px;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
