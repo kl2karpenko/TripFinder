@@ -1,25 +1,29 @@
-@import (css) "vendor/bootstrap.min.css";
-@import (css) "vendor/bootstrap-theme.min.css";
+	@import (css) "vendor/bootstrap.min.css";
 
-@import "var";
+	@import (less) "parts/header.less";
 
-@font-face {
-  font-family: "BigNoodleTitling";
-  src: url("fonts/big_noodle_titling.ttf");
-}
+    @import (less) "parts/footer.less";
 
-a {
-  text-decoration: none;
-}
+    @import (less) "var.less";
 
-.content-center {
-  width: 1171px;
-  max-width: 100%;
-  margin: 0 auto;
-}
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body {
-  font-family: "Open Sans";
-}
+	@font-face {
+    font-family: "BigNoodleTitling"; 
+    src: url("fonts/big_noodle_titling.ttf"); /* Путь к файлу со шрифтом */
+    
 
-@import "parts/header";
+
+   };
+
+   .content-center{
+   	width: 1171px;
+   	margin: 0 auto;
+   	max-width: 100%;
+
+   }
+
+   body{
+    font-family: "OpenSans";
+
+   }
